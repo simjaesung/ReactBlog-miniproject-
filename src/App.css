@@ -7,6 +7,57 @@
   pointer-events: none;
 }
 
+.black-nav{
+  display: flex;
+  background: black;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+.list{
+  border-bottom: 1px solid black;
+  text-align: left;
+  padding: 20px;
+}
+
+.writeAll{
+  text-align: left;
+  padding: 20px;
+}
+
+.writeBody{
+  width: 500px;
+  height: 300px;
+}
+
+.start{
+  opacity: 0;
+}
+
+.end{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.story{
+  text-align: left;
+  padding: 20px;
+}
+
+.story-title{
+  width: 70%;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 10px;
+}
+
+.story-body{
+  border: 1px solid gainsboro;
+  height: 200px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
