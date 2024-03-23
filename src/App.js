@@ -5,6 +5,7 @@ import Write from './page/Write';
 import Story from './page/Story';
 import Modify from './page/Modify';
 
+
 function App() {
   let navigate = useNavigate();
   return (

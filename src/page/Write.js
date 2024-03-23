@@ -27,9 +27,8 @@ function Write(){
             </div>
             <button onClick={()=>{
                 let tmp = []; 
-                tmp.push(title); tmp.push(body); tmp.push(dateFormat());
+                tmp.push(title); tmp.push(body); tmp.push(dateFormat()); tmp.push(0);
                 dispatch(addStory(tmp));
-                dispatch(addLike(0));
 
                 navigate('/');
             }}>글 발행</button>

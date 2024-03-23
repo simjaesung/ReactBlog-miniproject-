@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 
 function Story(){
     let title = useSelector((state) => {return state.list});
-    let like = useSelector((state) => { return state.like });
     let [fade, setFade] = useState('');
     let dispatch = useDispatch();
     let {id} = useParams();
@@ -24,7 +23,7 @@ function Story(){
             <div className="story-body">
                 <p style={{paddingLeft : '20px'}}>{title[id].body}</p>
             </div>
-            <h5 onClick={() => {dispatch(setLike(id))}}>❤️ : {like[id]} </h5>
+            <h5 onClick={() => {dispatch(setLike(id))}}>❤️ : {title[id].like} </h5>
             <button onClick={()=>{navigate('/modify/'+id)}}>글 수정하기</button>
         </div>
     )
