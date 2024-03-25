@@ -16,8 +16,8 @@ function App() {
       <Routes>
         <Route path='/' element={ <Main />}/>
         <Route path='/write' element ={<Write/>}/>
-        <Route path='/story/:id' element = {<Story/>}></Route>
-        <Route path='/modify/:id' element = {<Modify/>}></Route>
+        <Route path='/story/:id' element = {<Story/>}/>
+        <Route path='/modify/:id' element = {<Modify/>}/>
       </Routes>
     </div>
   );

@@ -8,9 +8,10 @@ function Modify(){
     let navigate = useNavigate();
     let dispatch = useDispatch();
     let [fade,setFade] = useState('');
-    let story = useSelector((state) => {return state.list});
-    let [title,setTitle] = useState(story[id].title);
-    let [body,setBody] = useState(story[id].body);
+    let [story] = useState(JSON.parse(localStorage.getItem('data')));
+    //let story = useSelector((state) => {return state.list});
+    let [title,setTitle] = useState(story[id][0]);
+    let [body,setBody] = useState(story[id][1]);
 
     useEffect(()=>{
         setTimeout(() => {setFade('end')},100);
